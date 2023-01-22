@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flipkart</title>
+    <link rel="shortcut icon"
+    href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
+    type="image/x-icon">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+form{
+    width: 100%;
+}
+main{
+    padding-bottom: 50px;
+    background-color: #f1f3f6;
+    padding: 10px 10px;
+}
+header{
+    background-color: #2874f0;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 70px;
+    position: relative;
+    top:2px;
+}
+.logo img{
+    width: 100%;
+}
+.explore{
+    width: 80px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    /* justify-content: center; */
+    align-content: flex-start;
+    height: 100%;
+    position: relative;
+    top:-2px;
+}
+.explore a{
+    display: flex;
+    color: white;
+}
+.explore a:hover{
+    text-decoration: underline;
+}
+.explore p{
+    margin:0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 550;
+    color:white;
+    
+}
+.explore img{
+    width: 10px;
+    height: 10px;
+    margin: 0;
+}
+.plus-icon{
+    color:#ffe500;
+    
+}
+/******search_container******/
+.search_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    min-width: 300px;
+    width: 400px;
+    height: 32px;
+    margin:0px 10px;
+    background-color: white;
+    border-radius: 1px;
+    padding: 0px 15px;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+.search_container i{
+    color:#2874f0;
+}
+.search_container input{
+    width: 100%;
+    font-size: 15px;
+    border:none;
+    outline: none;
+}
+.recent_Search{
+    position: absolute;
+    background-color: white;
+    box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    height: 400px;
+    width: 100%;
+    top: 32px;  /*****change done****/
+    margin-left: -15px;
+    border-top: 1px solid #ccc;
+    display: none;
+    padding:15px;
+    z-index:12;   /*** change done****/
+}
+.search_container:focus-within .recent_Search{
+    display: block;
+}
+.recent_list{
+    display: flex;
+    padding: 5px 0px;
+}
+.recent_list i{
+    color:#7a7a7a;
+    font-size: 14px;
+}
+.recent_list p{
+    padding-left: 20px;
+    font-size: 15px;
+}
+/*******loginBtn_container**********/
+.loginBtn_container{
+    background-color: white;
+    padding: 6px 35px;
+    font-size: 15px;
+    border-radius: 1px;
+    margin:0px 10px;
+    position: relative;
+}
+.loginBtn_container a{
+    color: #2874f0;
+    font-weight: 550;
+    text-decoration: none;
+}
+.login_menu{
+    position: absolute;
+    top:34px;
+    height: 320px;
+    width: 100%;
+    width: 230px;
+    background-color: transparent;
+    margin-left: -40px;
+    transform: translateX(-25%);
+    display: none;
+    padding-top: 15px;
+    z-index:12; /*** change done****/
+}
+.login_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 110px;
+    top:1px;
+    border-top:0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+}
+.loginBtn_container:hover .login_menu{
+    display: block;
+}
+.login_menu_list{
+    height: 100%;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    padding: 5px 20px;
+    font-size: 15px;
+    
+}
+.login_menu_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.login_menu_top a:hover{
+    text-decoration: underline;
+}
+
+.nav-link{
+    color:white;
+    padding:0px 15px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 550;
+    margin: 0 5px;
+
+
+}
+.menu_nav_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+.menu_nav_link a{
+    padding-top: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.menu_nav_link a p{
+    padding-left: 10px;
+    color:#474545;
+    font-weight: 500;
+}
+.menu_nav_icon{
+    width: 15px;
+}
+
+/***more ****/
+.more_link{
+    font-weight: 550;
+    padding:0px 15px;
+    font-size: 15px;
+    color:white;
+    cursor: pointer;
+    margin: 0 10px;
+    position: relative;
+}
+.icon_more{
+    font-size: 10px;
+    transition: transform 0.5s;
+}
+.more_link:hover .icon_more{
+    transform: rotate(-180deg);
+}
+.more_menu{
+    position: absolute;
+    height:220px;
+    width:200px;
+    content: "";
+    background-color: transparent;
+    transform: translateX(-35%);  
+    padding-top:10px;
+    display: none;
+   z-index: 12; /*** change done****/
+    
+}
+.more_link:hover .more_menu{
+    display: block;
+}
+.more_menu::before{
+    position: absolute;
+    content: "";
+    margin-left: 95px;
+    top:1px;
+    border-top:0px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white; 
+}
+.more_menu_list{
+    background-color: white;
+    height: 100%;
+    box-shadow: -5px -0px 5px rgba(0,0,0,0.1),
+    5px 5px 5px rgba(0,0,0,0.1);
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.more_menu_list a{
+    display: flex;
+    font-size: 14px;
+}
+.more_menu_list i{
+    color: #2874f0;
+}
+.more_menu_list p{
+    color:#474545;
+    padding-left: 10px;
+    white-space: nowrap;
+    font-weight: 500 ;
+}
+
+
+
+.card_link{
+    display: flex;
+    font-size: 15px;
+    font-weight: 550;
+    color:white;
+    margin-left: 10px;
+}
+.card_link p{
+    padding: 0px 5px;
+    
+}
+
+/* section */
+
+.section-1 {
+    width: 100%;
+    height:50px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+}
+.section-1-container{
+    width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .section-1-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.section-1-item img {
+    width: 64px;
+    height: 64px;
+} */
+.section-1-item >a{
+    color: black;
+    font-size: 14px;
+    font-weight: 550;
+    
+}
+.section-1-item >a:hover{
+    color: #2874f0;
+}
+
+
+   #product a{
+        text-decoration: none;
+        color: black;
+    }
+    #product{
+        width: 100%;
+        margin-top: 10px;
+    }
+   
+    #product-container{
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% ;
+        grid-gap: 20px;
+        /* margin: auto; */
+        justify-content: center;
+        
+      }
+      #product-container>div{
+        /* border: 2px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 15px;
+        height: 400px;
+        
+      }
+      #product-container>div>img{
+        height: 200px;
+        width: 100%;
+
+      }
+      #product-container>div>h3{
+        margin: 10px 0px;
+      }
+      #product-container>div>p{
+        margin: 10px 0px;
+      }
+    #sub{
+        width: 90%;
+        display: flex;
+        background-color: white;
+        margin-top: 15px;
+       
+        
+    }
+    #side{
+        width: 20%;
+        padding: 20px 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+    #side p{
+
+        color: #ccc;
+        padding: 10px 10px;
+    }
+    #side h2{
+        padding: 15px 10px;
+    }
+    #side h4{
+        padding: 5px 10px;
+    }
+    #side h5{
+        padding: 5px 10px;
+    }
+
+      
+</style>
+</head>
+
+
+
+<body>
+    <header>
+        <div class="logo_Container">
+            <div class="logo">
+                <img
+                    src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+            </div>
+            <div class="explore">
+                <a href="#">
+                    <p>Explore <span class="plus-icon">Plus</span></p>
+                    <img
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" />
+                </a>
+            </div>
+        </div>
+
+        <div class="search_container">
+            <form id="search_form">
+                <input type="text" placeholder="Search for products brands and more" id="search_input" />
+            </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!--recent search-->
+            <div class="recent_Search">
+
+            </div>
+        </div>
+
+        <div class="loginBtn_container">
+            <a href="./login.html">Login</a>
+            <div class="login_menu">
+                <div class="login_menu_list">
+                    <div class="login_menu_top">
+                        <p>New Customer?</p>
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <div class="menu_nav_link">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <p>My Profile</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-plus-square menu_nav_icon" aria-hidden="true"></i>
+
+
+                            <p>Flipkart plus zone</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-first-order" aria-hidden="true"></i>
+                            <p>Order</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <p>Wishlist</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <p>Rewards</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <p>Gift Cards</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="nav-link" href="#">
+            Become a Seller
+        </a>
+
+        <div class="more_link">
+            More
+            <i class="fa-solid fa-angle-down icon_more"></i>
+            <div class="more_menu">
+                <div class="more_menu_list">
+
+                    <a href="#">
+                        <i class="fa fa-bell menu_nav_icon" aria-hidden="true"></i>
+                        <p>Notification Preferences</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-question-circle menu_nav_icon" aria-hidden="true"></i>
+                        <p>24 X 7 Customer Care</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right menu_nav_icon" aria-hidden="true"></i>
+                        <p>Advertise</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-download menu_nav_icon" aria-hidden="true"></i>
+                        <p>Download App</p>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+
+        <a href="#">
+            <div class="card_link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </a>
+
+    </header>
+
+      <!-- section 1 -->
+      <section class="section-1">
+        <div class="section-1-container">
+            <div class="section-1-item">
+                
+                <a href="#">Top Offers</a>
+
+            </div>
+            <div class="section-1-item">
+
+
+                <a href="#">Mobiles&Tablets</a>
+            </div>
+            <div class="section-1-item">
+                
+
+                <a href="#">Electronics</a>
+            </div>
+            <div class="section-1-item">
+                
+
+                <a href="#">TVs&Appliances</a>
+            </div>
+            <div class="section-1-item">
+                
+
+                <a href="#">Fashion</a>
+            </div>
+            <div class="section-1-item">
+                
+                <a href="#">Beauty</a>
+            </div>
+            <div class="section-1-item">
+                
+
+                <a href="#">Home&Furniture</a>
+            </div>
+            <div class="section-1-item">
+                
+                <a href="#">Flight</a>
+            </div>
+            <div class="section-1-item">
+                
+                <a href="#">Grocery</a>
+
+            </div>
+        </div>
+    </section>
+
+<div id="sub">
+    <div id="side">
+        <select >
+            <option value="">Sort by price</option>
+            <option value="Low">Low to High</option>
+            <option value="High"> High to Low</option>
+        </select>
+        <h2>Filter <hr></h2>
+        <h4>CATEGORIES</h4>
+        <p>< Clothing and Accessori..</p>
+        <p>< Winter Wear</p>
+        <p>< Scarves</p>
+        <h5>Women's Scarves <hr> </h5>
+        <h4>GENDER <hr></h3>
+        <h4>Discount <hr></h3>
+        <h5>CUSTOMER RATING</h3>
+    </div>
+<div id="product">
+    <a  href="./propage.html"><div id="product-container"></div></a>
+</div>
+</div>
+</body>
+</html>
+<script>
+    // const url="https://63cbff7d9b72d2a88e0607f8.mockapi.io/products"
+    async function FetchData(){
+        try{
+            let res=await fetch("https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-tech-products")
+            res=await res.json();
+            console.log(res)
+            filterData(res.data)
+            filteredData(res.data)
+        }catch(err){
+            console.log(err)
+        }
+    }
+    FetchData()
+    
+
+
+
+
+     let container=document.getElementById("product-container")
+    function displayProduct(data){
+        container.innerHTML=""
+     data.forEach((product)=>{
+        let card=document.createElement("div")
+        let image=document.createElement("img")
+        let title=document.createElement("h3")
+        let desc=document.createElement("p")
+        let price=document.createElement("p")
+        
+        image.setAttribute("src",product.img)
+        title.innerText=product.brand
+        desc.innerText=product.details
+        price.innerText=` ₹ ${product.price}`
+        card.append(image,title,desc,price)
+     container.append(card)
+        
+     });
+    }
+
+    let FormEl=document.getElementById("search_form")
+    let InputEl=document.getElementById("search_input")
+    FormEl.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            FetchData()
+        })
+    function filterData(data){
+        
+        
+            let textEl=InputEl.value
+            if(textEl===""){
+                displayProduct(data)
+            }else{
+
+            let filtered=data.filter((element)=>{
+                if(element.brand.toUpperCase().includes(textEl.toUpperCase())==true){
+                    return true
+                }else if(element.price==textEl){
+                    return true
+                }else{
+                    return false
+                }
+            })
+            displayProduct(filtered)
+            }
+    }
+
+     let SelectEl=document.querySelector("select")
+
+     function filteredData(demo){
+        SelectEl.addEventListener("change",()=>{
+            if(SelectEl.value==""){
+                displayProduct(demo)
+            }else if(SelectEl.value=="Low"){
+                let store=demo.sort(function(a,b){
+                    if(a.price<b.price){
+                        return -1
+                    }else if(a.price>b.price){
+                        return 1
+                    }else{
+                        return 0
+                    }
+                })
+                displayProduct(store)
+            }else if(SelectEl.value=="High"){
+                let store2=demo.sort(function(b,a){
+                    if(a.price<b.price){
+                        return -1
+                    }else if(a.price>b.price){
+                        return 1
+                    }else{
+                        return 0
+                    }
+                })
+                displayProduct(store2)
+            }
+        })
+     }
+
+</script>

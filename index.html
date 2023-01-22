@@ -5,145 +5,198 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon"
-        href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
-        type="image/x-icon">
+    <title>flipkart </title>
+    <link rel="icon" href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico" />
+    <!--stylesheet-->
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- header -->
     <header>
-        <div class="nav-container">
+        <div class="logo_Container">
             <div class="logo">
-                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
-                    alt="">
+                <img
+                    src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+            </div>
+            <div class="explore">
+                <a href="#">
+                    <p>Explore <span class="plus-icon">Plus</span></p>
+                    <img
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" />
+                </a>
+            </div>
+        </div>
 
-                <div class="logo-image">
-                    <a href="https://www.flipkart.com/plus">
-                        <p>Explore<span class="span-logo">Plus</span>
-                            <p>
+        <div class="search_container">
+            <form id="search_form">
+                <input type="text" placeholder="Search for products brands and more" id="search_input" />
+            </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!--recent search-->
+            <div class="recent_Search">
 
-                                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
-                                    alt="">
-                    </a>
+            </div>
+        </div>
+
+        <div class="loginBtn_container">
+            <a href="./login.html">Login</a>
+            <div class="login_menu">
+                <div class="login_menu_list">
+                    <div class="login_menu_top">
+                        <p>New Customer?</p>
+                        <a href="./signin.html">Sign Up</a>
+                    </div>
+                    <div class="menu_nav_link">
+                        <a href="#">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <p>My Profile</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-plus-square menu_nav_icon" aria-hidden="true"></i>
+
+
+                            <p>Flipkart plus zone</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-first-order" aria-hidden="true"></i>
+                            <p>Order</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <p>Wishlist</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <p>Rewards</p>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <p>Gift Cards</p>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-
-
-            <div class="search">
-                <div class="search-container">
-                    <form id="search_form">
-
-                        <input type="text" class="search-box" placeholder="search for products,brands and more"
-                            id="search_input">
-                    </form>
-                    <i class="fa fa-search" aria-hidden="true"></i>
-
-
-
-
-
-
-                    <!-- recent search -->
-
-                    <!-- <div class="recent_search">
-                    <div class="recent_list">
-                        <i class="fa-solid fa-clock-rotate-left"></i>
-                        <p>mobile</p>
-                    </div> -->
-                </div>
-            </div>
-
-
-
         </div>
-        <div class="login">
-            <a href="#">Login</a>
-            
-        </div>
-        <div class="become-seller">
 
-            <a href="#">Become a Seller</a>
-        </div>
-        <div class="more">
+        <a class="nav-link" href="#">
+            Become a Seller
+        </a>
+
+        <div class="more_link">
             More
-            <i class="fa fa-angle-down icon_more" aria-hidden="true"></i>
-            <!-- <i class="fa fa-angle-down" aria-hidden="true" class=""></i> -->
+            <i class="fa-solid fa-angle-down icon_more"></i>
+            <div class="more_menu">
+                <div class="more_menu_list">
+
+                    <a href="#">
+                        <i class="fa fa-bell menu_nav_icon" aria-hidden="true"></i>
+                        <p>Notification Preferences</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-question-circle menu_nav_icon" aria-hidden="true"></i>
+                        <p>24 X 7 Customer Care</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right menu_nav_icon" aria-hidden="true"></i>
+                        <p>Advertise</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-download menu_nav_icon" aria-hidden="true"></i>
+                        <p>Download App</p>
+                    </a>
 
 
+                </div>
+            </div>
         </div>
-        <div class="cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <p>cart</p>
-        </div>
-        </div>
+
+        <a href="./cart.html">
+            <div class="card_link">
+                <span class="count"></span>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Cart</p>
+            </div>
+        </a>
+
     </header>
-
 
     <!-- section 1 -->
     <section class="section-1">
         <div class="section-1-container">
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/178cf5a874cd697a.png?q=100" alt="">
-                Top Offers
+                <a href="./product.html">Top Offers</a>
+
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e2268d56d09df684.png?q=100" alt="">
-                Mobiles&Tablets
+
+                <a href="./product.html">Mobiles&Tablets</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/6e3e1efa83bc56c3.png?q=100" alt="">
-                Electronics
+
+                <a href="./product.html">Electronics</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3e1225e6bda1c9e.png?q=100" alt="">
-                TVs&Appliances
+
+                <a href="./product.html">TVs&Appliances</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a11d5d13e54bf964.png?q=100" alt="">
-                Fashion
+
+                <a href="./product.html">Fashion</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f09b2d254acb48a.png?q=100" alt="">
-                Beauty
+
+                <a href="./product.html">Beauty</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5972d5da375c81c7.png?q=100" alt="">
-                Home&Furniture
+
+                <a href="./product.html">Home&Furniture</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1cfc2d91f717510a.png?q=100" alt="">
-                Flight
+
+                <a href="./product.html">Flight</a>
             </div>
             <div class="section-1-item">
                 <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/d154c0b4d536c1cf.png?q=100" alt="">
-                Grocery
+
+                <a href="./product.html">Grocery</a>
+
             </div>
         </div>
     </section>
 
-
-    <!-- section 2 -->
-    <section class="section-2 container">
-        <div class="section-2-container">
-            <!-- <button id="prev"><</button>
-            
-                    <button id="next">></button>
-                    <img class="testing" src="" alt=""> -->
-
+    <!--image slider-->
+    <div class="imageSliderContainer">
+        <div class="imageSliderBtn">
+            <button id="preve_imageBtn">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <button id="next_imageBtn">
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </div>
 
-    </section>
+        <div class="imageSliderList"></div>
+
+    </div>
 
 
     <!-- section 3 -->
     <section class="section-3 container">
         <div class="section-3-container"></div>
     </section>
+
 
 
     <!-- section 4-->
@@ -217,6 +270,7 @@
         </div>
     </section>
 
+
     <!-- section 5 -->
     <section class="section-5 container">
         <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/d78dda604e158c5c.jpg?q=50" alt="">
@@ -224,31 +278,297 @@
         <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/2073732fc5e1fef2.jpg?q=50" alt="">
     </section>
 
-
-    <!-- section 6 -->
+    <!-- section 6-->
     <section class="section-6 container">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/6e9e6f6130cddc96.jpg?q=50" alt="">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/d78dda604e158c5c.jpg?q=50" alt="">
-
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/960/960/image/2073732fc5e1fef2.jpg?q=50" alt="">
+        <div class="section-6-container">
+            <div class="section-6-offers">
+                <div class="section-6-offers-viewall">
+                    Best of Electronics
+                    <button>View All</button>
+                </div>
+            </div>
+            <div class="section-6-list">
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kx50gi80/projector/r/9/p/zeb-pixa-play-12-5-6-dobly-audio-led-projector-zebronics-original-imag9z3yujqmzqt4.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Top Mirrorless Camera</div>
+                    <div class="section-6-item-price">Shop Now</div>
+                    <div class="section-6-item-explore">Canon,Sorry,Fujifilm..</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/ks7tuvk0/gimbal/v/z/7/0-43-om4-se-dji-original-imag5u6rgsdh6k4g.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Top Deal of Camera Accessori..</div>
+                    <div class="section-6-item-price">Shop Now</div>
+                    <div class="section-6-item-explore">Tripods,Gimbals,Bags..</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/projector/b/f/c/i9-pro-max-full-hd-1080p-native-with-4k-support-150-381-cm-large-original-imaghtmhzbs2tvpw.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Top Mirror Camera</div>
+                    <div class="section-6-item-price">Shop Now</div>
+                    <div class="section-6-item-explore">Canon,Sony..</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kgsb1jk0/monitor/f/d/z/vg27aql1a-tuf-vg27aql1a-asus-original-imafwyeptd8ysndr.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">ASUS Minitors</div>
+                    <div class="section-6-item-price">From ₹14999</div>
+                    <div class="section-6-item-explore">Top Rated</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kixgtjk0-0/monitor/e/a/m/d2020h-d2020h-dell-original-imafym3kxmbhzzf6.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Monitor</div>
+                    <div class="section-6-item-price">From ₹8279</div>
+                    <div class="section-6-item-explore">DELL</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/printer/j/j/y/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Printers</div>
+                    <div class="section-6-item-price">From ₹3999</div>
+                    <div class="section-6-item-explore">HP</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/hair-dryer/c/t/g/philips-hp8100-46-original-imaemymzuxrnzfjb.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Best of Hair Dryers</div>
+                    <div class="section-6-item-price">From ₹499</div>
+                    <div class="section-6-item-explore">realme,Philips& more</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/monitor/w/m/3/-original-imagky3vnpdgd9gm.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Monitors</div>
+                    <div class="section-6-item-price">From ₹6599</div>
+                    <div class="section-6-item-explore">acer</div>
+                </div>
+                <div class="section-6-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/l1pc3gw0/power-bank/e/u/y/-original-imagd7dzan7sakt2.jpeg?q=70"
+                        alt="">
+                    <div class="section-6-item-head">Premium PowerBanks</div>
+                    <div class="section-6-item-price">Shop Now</div>
+                    <div class="section-6-item-explore">Mi,realme & more</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- section 7 -->
+
+    <!-- section 7-->
     <section class="section-7 container">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/100/100/image/d10fc1ea3a67ee73.jpg?q=50" alt="">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/100/100/image/d10fc1ea3a67ee73.jpg?q=50" alt="">
+        <div class="section-7-container">
+            <div class="section-7-offers">
+                <div class="section-7-offers-viewall">
+                    Shop for Your Valentine
+                    <button>View All</button>
+                </div>
+            </div>
+            <div class="section-7-list">
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kruyw7k0/smart-band-tag/o/u/l/no-standard-cartoon-character-waterproof-led-kids-watch-for-boys-original-imag5kf2mgukhthn.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Wrist Watches</div>
+                    <div class="section-7-item-price">Min. 90% Off</div>
 
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/100/100/image/d10fc1ea3a67ee73.jpg?q=50" alt="">
-        <img src="https://rukminim1.flixcart.com/fk-p-flap/100/100/image/d10fc1ea3a67ee73.jpg?q=50" alt="">
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kj61gnk0-0/makeup-kit/8/d/j/makeup-kit-hello-kitty-makeup-brushes-me-now-makeup-sponges-my-original-imafytyr2yfetuxy.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Makeup Kits & Combo</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/l2f20sw0/shopsy-hand-messenger-bag/b/4/n/stylish-women-shoulder-bag-shoper-1red-hobo-khatushyam-original-imagdrmucazmpztg.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Handbags</div>
+                    <div class="section-7-item-price">Min. 70% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/xif0q/hand-messenger-bag/p/x/p/attractive-printed-formal-sling-bag-ls-223-slnbg-mkri-prnt-whte-original-imagjz9yg5mskxz2.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Sling Bags</div>
+                    <div class="section-7-item-price">Min. 70% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kwnv6a80/eye-liner/c/n/7/25-smudge-0proof-liquid-glitter-eyeliner-blue-silver-green-black-original-imag9ak7v9fvgtku.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Eyeliners</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kwwfte80/jewellery-set/c/7/g/na-na-80035gr-saiyoni-original-imag9hyj2hudhkwh.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Artificial Jewellary</div>
+                    <div class="section-7-item-price">Min. 70% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kz5vwy80/hand-messenger-bag/h/t/t/classic-cutting-design-ls-2-ng30-blck-pc3-messenger-bag-like-original-imagb8tes9gmhvhx.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Massenger Bags</div>
+                    <div class="section-7-item-price">Min. 70% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/l3bx5e80/attar/z/r/7/ibadat-special-combo-non-alcoholic-premium-quality-attar-perfume-original-imagehacutewagdz.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Attar</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kwzap3k0/lipstick/j/t/n/16-non-transfer-insta-beauty-waterproof-longlast-sensational-original-imag9jby47tukyz5.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Lipstick</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kp5sya80/combo-kit/x/g/h/black-smudge-proof-kajal-3in1-combo-set-36h-eyeliner-curler-set-original-imag3gmrzepymcg6.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Eye Makeup Combo</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+
+                </div>
+                <div class="section-7-item">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/l4x2rgw0/nail-polish/0/a/a/54-4-new-unique-color-rich-paint-hd-shine-pastel-color-combo-set-original-imagfpgmsgcuskmh.jpeg?q=70"
+                        alt="">
+                    <div class="section-7-item-head">Nail Polish</div>
+                    <div class="section-7-item-price">Min. 50% Off</div>
+
+                </div>
+            </div>
+        </div>
     </section>
-
 
     <!-- footer -->
     <footer>
-        Made in india by sowjanya
+        <ol>Top Stories:Brand Directory</ol>
+        <ol>MOST SEARCHED FOR ON FLIPKART:Flipkart Axis Bank Super Elite Credit card|Primebook Laptops|Bounce Infinity
+            E1|Buy Laptop on EMI|vivo T1X|OPPO Reno8 5G|OPPO Reno8 Pro 5G|Nothing Phone 1|Sell Old Mobile Phones|ASUS
+            TUF Gaming F15 Core i5 10th Gen|Electronics Store|OPPO A16K|Vivo Y33T|OPPO Reno7 5G|Okaya Electric
+            Vehicles|bgauss electric scooter|OPPO Reno7 Pro 5G|iPhone 13iPhone 13 Pro|iPhone 13 Pro Max|iPhone 13
+            Mini|Google Pixel 6a covers|Flipkart Quick|Ampere Magnus|Flipkart Help Centre|Online Boat Store|Covers from
+            Rs 99|Flipkart Track Orders|Flipkart Manage Orders|Flipkart Return Orders|Flipkart Gift Cards Store|Flipkart
+            Axis Bank Credit Card|Flipkart Pay Later</ol>
+        <ol>MOBILES:iPhone 12 64GB|iPhone 12 Pro 512GB|iPhone 12 128GB|Vivo Y91i|Vivo Y11|Vivo Y15|Vivo Y50|Vivo
+            Y12|Reno2 F|Oppo A12|Oppo F15|Oppo A31|Samsung A71|Samsung A51|Samsung A31|Realme X2|iPhone 11|iPhone 11
+            Pro|iPhone 11 Pro Max|Mobile Offers|iphone x4G Mobile|Nokia Mobile|Samsung Mobile|iphone|Oppo Mobile|Vivo
+            Mobile</ol>
+        <ol>CAMERA:GoPro Action Camera|Nikon Camera|Canon Camera|Sony Camera|Canon DSLR|Nikon DSLR</ol>
+
     </footer>
 
-    <script src="javascript.js"></script>
+
 </body>
 
 </html>
+
+<script>
+    let ImageEl = document.querySelector(".imageSliderList")
+
+
+
+
+    const imageSlider = [
+        
+             "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1fc22e2fa5b3f9f4.jpg?q=50",
+        
+             "https://rukminim1.flixcart.com/fk-p-flap/50/50/image/a1c75ace6eb4ddea.jpg?q=50"
+        ,
+        
+             "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1fc22e2fa5b3f9f4.jpg?q=50"
+
+        ,
+        
+             "https://rukminim1.flixcart.com/fk-p-flap/50/50/image/a1c75ace6eb4ddea.jpg?q=50"
+
+        ,
+        
+             "https://rukminim1.flixcart.com/fk-p-flap/844/140/image/1fc22e2fa5b3f9f4.jpg?q=50"
+
+        
+    ]
+    let img=document.createElement("img")
+    let count = 1
+     let btn1=document.getElementById("preve_imageBtn")
+     let btn2=document.getElementById("next_imageBtn")
+     btn2.addEventListener("click",()=>{
+        if(count<imageSlider.length){
+       img.setAttribute("src",imageSlider[count])
+      count++
+        }
+    })
+    
+    btn1.addEventListener("click",()=>{
+        if(count>=0){
+        img.setAttribute("src",imageSlider[count])
+       count--
+        }
+     })
+     
+     
+
+    //  function display(){
+    //     ImageEl.innerHTML=""
+    //    
+    //  
+    //  }
+   
+    img.setAttribute("src",imageSlider[0])
+    
+    console.log(imageSlider[0])
+    ImageEl.append(img)
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+    let FormEl=document.getElementById("search_form")
+    let InputEl=document.getElementById("search_input")
+    FormEl.addEventListener("submit",(e)=>{
+            e.preventDefault()
+
+        })
+    function filterData(data){
+        
+        
+            let textEl=InputEl.value
+            if(textEl===""){
+                displayProduct(data)
+            }else{
+
+            let filtered=data.filter((element)=>{
+                if(element.brand.toUpperCase().includes(textEl.toUpperCase())==true){
+                    return true
+                }else if(element.price==textEl){
+                    return true
+                }else{
+                    return false
+                }
+            })
+            displayProduct(filtered)
+            }
+    }
+</script> -->

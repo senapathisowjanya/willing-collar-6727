@@ -47,7 +47,7 @@
     #first_part{
         width: auto;
         height: 500px;
-        
+        padding: 20px 15px 0px 15px;
         margin: 0px 25px 0px -10px;
         text-align: center;
         background-color: #2874f0;
@@ -66,9 +66,13 @@
         text-align: justify;
     }
     #anchor{
-        padding-top: 130px;
+        width: 280px;
+        text-align: center;
+        padding: 20px 0px;
+        margin: 15px;
         text-decoration: none;
         color: #2874f0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     
@@ -77,18 +81,18 @@
 <body>
     <form class="Form">
       <div id="first_part">
-        <h2>Login</h2>
-        <p>Get Acees to your Orders,Wishlist and Recommendations</p>
+        <h2>Looks like you're new here!</h2>
+        <p>sign up with your mobile number to get started</p>
       </div>
 
         <div id="second_part">
 
         
-        <input placeholder="Enter Email/Mobile number" type="email" id="email">
+        <input placeholder="Enter Mobile number" type="number" id="email">
         <p id="pass">By countinuing,you agree to Flipkart's <span id="span">Terms of Use</span>and <span>Privacy Policy</span>
         </p>
-        <button id="btn" onclick="valid()">Request OTP</button>
-        <a id="anchor" href="./login.html">New to Flipkart?Create an account</a>
+        <button id="btn" onclick="valid()">CONTINUE</button>
+        <a id="anchor" href="./login.html">Existing User?Log in</a>
     </div>
     
     </form>
@@ -104,7 +108,7 @@ let Btn=document.getElementById("btn")
     valid()
 })
 function valid(){
-    if(user.value==="sowjanyanageswar9@gmail.com"){
+    if(user.value==="9381726433"){
         alert("WELCOM TO FILPKART")
     }else{
         alert("WRONG CREDINTIAL")
